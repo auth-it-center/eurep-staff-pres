@@ -1,222 +1,284 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+	<title>reveal.js – The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	<![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section data-transition="slide" data-background="#b5533c">
+				<h1>AUTH in the EWP Network</h1>
+				<p>
+					<small>Maria Tsiakmaki | Konstantinos Karaoglanoglou</small>
+				</p>
+				<p>
+					<small>IT Center of AUTH</small>
+				</p>
+				<p>
+					<a href="https://www.it.auth.gr"><img src="https://cdn.it.auth.gr/images/logos/it/it-logo-100x100.png"/></a>
+				</p>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section data-transition="slide" data-background="#b5533c">
 				<section data-transition="slide" data-background="#b5533c">
-					<h1>AUTH in the EWP Network</h1>
-					<p>
-						<small>Maria Tsiakmaki | Konstantinos Karaoglanoglou</small>
-					</p>
-					<p>
-						<small>IT Center of AUTH</small>
-					</p>
-					<p>
-						<a href="https://www.it.auth.gr"><img src="https://cdn.it.auth.gr/images/logos/it/it-logo-100x100.png"/></a>
-					</p>
+					<h2>Intro</h2>
+					<p align="left">Erasmus Without Paper is a project co-funded by the the European Commission.</p>
+					<p align="left">Erasmus without Paper is about:</p>
+					<ul>
+						<li>Replacing a paper-based workflow by a digital one</li>
+						<li>Tackling the administrative workload for students and staff</li>
+						<li>Creating free public infrastructure.</li>
+						<li>Streamlining technical solutions for student mobility.</li>
+					</ul>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section data-transition="slide" data-background="#b5533c">
-					<section data-transition="slide" data-background="#b5533c">
-						<h2>Intro</h2>
-						<p align="left">Erasmus Without Paper is a project co-funded by the the European Commission.</p>
-						<p align="left">Erasmus without Paper is about:</p>
+					<h2>Intro</h2>
+					<p>The current ongoing project Erasmus Without Paper 2.0 will run throughout 2018 and 2019.</p>
+					<p>More attention is given to support universities that do not have IT-solutions.</p>
+				</section>
+				<section data-transition="slide" data-background="#b5533c">
+					<h2>Intro</h2>
+					<p>Consortium of 14 partner institutions composed of public institutions, higher education organisations, and companies from 8 European countries along with 12 associate partners</p>
+					<p><a href="https://www.erasmuswithoutpaper.eu/partners" target="_blank">More Consortium info here</a></p>
+				</section>
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<section data-transition="slide" data-background="#b5533c">
+					<h2>EWP Architecture</h2>
+					<p>
+						Consists of many independent modules(APIs).
 						<ul>
-							<li>Replacing a paper-based workflow by a digital one</li>
-							<li>Tackling the administrative workload for students and staff</li>
-							<li>Creating free public infrastructure.</li>
-							<li>Streamlining technical solutions for student mobility.</li>
+							<li>Institutions</li>
+							<li>Organizational Units</li>
+							<li>Courses</li>
+							<li>Simple Course Replication</li>
+							<li>Outgoing Mobilities</li>
+							<li>Incoming Mobilities</li>
+							<li>Learning Agreements</li>
+							<li>Transcripts of Records</li>
 						</ul>
-					</section>
-
-					<section data-transition="slide" data-background="#b5533c">
-						<h2>Intro</h2>
-						<p>The current ongoing project Erasmus Without Paper 2.0 will run throughout 2018 and 2019.</p>
-						<p>More attention is given to support universities that do not have IT-solutions.</p>
-					</section>
-					<section data-transition="slide" data-background="#b5533c">
-						<h2>Intro</h2>
-						<p>Consortium of 14 partner institutions composed of public institutions, higher education organisations, and companies from 8 European countries along with 12 associate partners</p>
-						<p><a href="https://www.erasmuswithoutpaper.eu/partners" target="_blank">More Consortium info here</a></p>
-					</section>
+					</p>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<section data-transition="slide" data-background="#b5533c">
-						<h2>XML, XSD Schema files</h2>
-						<p align="left">Describe the APIs for</p>
-						<div align="left">
-							<ul>
-								<li>Institutions</li>
-								<li>Organizational Units</li>
-								<li>Courses</li>
-								<li>Simple Course Replication</li>
-								<li>Outgoing Mobilities</li>
-								<li>Incoming Mobilities</li>
-								<li>Learning Agreements</li>
-								<li>Transcripts of Records</li>
-							</ul>
-						</div>
-						<p align="left"><small>Available at: https://github.com/erasmus-without-paper/</small></p>
-					</section>
-					<section data-transition="slide" data-background="#b5533c">
-						<h3>EWP-related Git projects</h3>	
-						<img src="assets/screenshot-ewp-git.png">
-					</section>
+					<h3>EWP Architecture</h3>	
+					<p>
+						Each institution can choose which of theese modules to implement depending on their needs.
+					</p>
+				</section>
+
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<section data-transition="slide" data-background="#b5533c">
+					<h2>XML, XSD Schema files</h2>
+					<p align="left">Describe the APIs for</p>
+					<div align="left">
+						<ul>
+							<li>Institutions</li>
+							<li>Organizational Units</li>
+							<li>Courses</li>
+							<li>Simple Course Replication</li>
+							<li>Outgoing Mobilities</li>
+							<li>Incoming Mobilities</li>
+							<li>Learning Agreements</li>
+							<li>Transcripts of Records</li>
+						</ul>
+					</div>
+					<p align="left"><small>Available at: https://github.com/erasmus-without-paper/</small></p>
+				</section>
+				<section data-transition="slide" data-background="#b5533c">
+					<h3>EWP-related Git projects</h3>	
+					<img src="assets/screenshot-ewp-git.png">
+				</section>
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<section data-transition="slide" data-background="#b5533c">
+					<h2>EWP Registry Service</h2>
+					<p>Cata­logue which describes all the insti­tu­tions and modules implemented by them.<br>
+					Functions like a phonebook in the ewp network.</p>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<section data-transition="slide" data-background="#b5533c">
-						<h2>EWP Registry Service</h2>
-						<p>Cata­logue which describes all the insti­tu­tions and APIs exposed by them.</p>
-					</section>
-					
-					<section data-transition="slide" data-background="#b5533c">
-						<h3>EWP Registry Service</h3>	
-						<img src="assets/screenshot-registry.png" style="width:578px;height:319px;">
-						
-						<p><small>Dev Registry Service for development purposes.</small></p>
-					</section>
-
-					<section data-transition="slide" data-background="#b5533c">
-						<h3>HEI/API Coverage Matrix</h3>	
-						<img src="assets/screeshot-coverage-matrix.png">
-					</section>
-
-					<section data-transition="slide" data-background="#b5533c">
-						<h3>Manifest Importer Status</h3>	
-						<img src="assets/screenshot-manifest-importer-status.png">
-						<p><small>Registry is updated automatically</small></p>
-					</section>
-
-
-
+					<h3>EWP Registry Service</h3>	
+					<p>HEI/API Coverage Matrix</p>
+					<img src="assets/screeshot-coverage-matrix.png" style="width: 90%">
 				</section>
+
+				<section data-transition="slide" data-background="#b5533c">
+					<h3>Manifest File</h3>	
+					<p>Each institution publishes one in the EWP network.<br>Contains all the info regarding the institution.<br>Whenever the data in the manifest change, the registry is updated automatically.</p>
+				</section>
+
+
+
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<section data-transition="slide" data-background="#b5533c">
+					<h2>EWP Registry Service</h2>
+					<p>Cata­logue which describes all the insti­tu­tions and APIs exposed by them.</p>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c">
+					<h3>EWP Registry Service</h3>	
+					<img src="assets/screenshot-registry.png" style="width:578px;height:319px;">
+
+					<p><small>Dev Registry Service for development purposes.</small></p>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c">
+					<h3>HEI/API Coverage Matrix</h3>	
+					<img src="assets/screeshot-coverage-matrix.png">
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c">
+					<h3>Manifest Importer Status</h3>	
+					<img src="assets/screenshot-manifest-importer-status.png">
+					<p><small>Registry is updated automatically</small></p>
+				</section>
+
+
+
+			</section>
 
 			<section data-transition="slide" data-background="#b5533c">
 				<section data-transition="slide" data-background="#b5533c">
 					<h2>How Did AUTH Join the EWP Network</h2>
 					<p>
-					Schema Understanding and Documentation Understanding
+						Schema Understanding and Documentation Understanding
 					</p>
 					<p>
-					Collaboration of different University Units (EUREP, IT Center of AUTh, QA)
+						Collaboration of different University Units (EUREP, IT Center of AUTh, QA)
 					</p>
 					<p> Testing</p>
 				</section>
 				<section data-transition="slide" data-background="#b5533c">
-					<h2>How Did AUTH Join the EWP Network</h2>
+					<h2>How Did AUTh Join the EWP Network</h2>
 					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+						Joining the EWP network begins with publishing your manifest file to the registry service.<br>Done through human interaction.<br><br>All the subsequent changes during the implementation are updated automatically as they happen. 
 					</p>
 				</section>
 				<section data-transition="slide" data-background="#b5533c">
-					<h2>How Did AUTH Join the EWP Network</h2>
+					<h2>How Did AUTh Join the EWP Network</h2>
 					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+						The next step is deciding what modules to implement and their feasibility.
 					</p>
 				</section>
 			</section>
 
+			<section>
 				<section data-transition="slide" data-background="#b5533c">
-					<h2>Issues/Difficulties</h2>
-					<p>Who are the data-holders? Identifying all the relevant stakeholders.</p>
-					<p>Technical Issues?</p>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c">
-					<h2>What's Next for AUTH in the EWP Network</h2>
-					<p>Covering more methods - Contribute with more data.</p>
-					<p>Discussing how we will use the EWP Registry's info to benefit our university.</p>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c">
-					<h2>Links</h2>
+					<h2>Technical Difficulties</h2>
 					<div align="left">
-						<p><small>Erasmus Without Paper - Competence Centre | https://cc.erasmuswithoutpaper.eu/</small></p>
-						<p><small>Architecture and Common Datatypes | https://github.com/erasmus-without-paper/ewp-specs-architecture</small></p>
-						<p><small>EWP Registry Service | https://registry.erasmuswithoutpaper.eu/</small></p>
-						<p><small>DEV Registry Service | https://dev-registry.erasmuswithoutpaper.eu/ </small></p>
-						<p><small>Developers Hub - Specifications, Validators and Tools | https://developers.erasmuswithoutpaper.eu/</small></p>
-						<p><small>Github | https://github.com/erasmus-without-paper</small></p>
-						<p><small>LinkedIn group | https://www.linkedin.com/groups/13590744/</small></p>
-						<p><small>Twitter | https://twitter.com/hashtag/ErasmusWithoutPaper</small></p>
+						<ul>
+							<li>Some required data may not be collected in the SIS or be distributed over different in the institution.</li>
+							<li>Data may be stored in different formats than those required or not even be digitised in the first place.</li>
+							<li>It is not easy for an instution to connect to the EWP network without a dedicated development team.</li>
+							<li>Currently used tools may not be compatible with EWP (i.e. IIAs via Google forms)</li>
+						</ul>
 					</div>
 				</section>
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<h2>Issues/Difficulties</h2>
+				<p>Who are the data-holders? Identifying all the relevant stakeholders.</p>
+				<p>Technical Issues?</p>
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<h2>What's Next for AUTH in the EWP Network</h2>
+				<p>Implementing more modules</p>
+				<p>Intergrating EWP in the existing mobility workflows.</p>
+			</section>
+
+			<section data-transition="slide" data-background="#b5533c">
+				<h2>Links</h2>
+				<div align="left">
+					<p><small>Erasmus Without Paper - Competence Centre | https://cc.erasmuswithoutpaper.eu/</small></p>
+					<p><small>Architecture and Common Datatypes | https://github.com/erasmus-without-paper/ewp-specs-architecture</small></p>
+					<p><small>EWP Registry Service | https://registry.erasmuswithoutpaper.eu/</small></p>
+					<p><small>DEV Registry Service | https://dev-registry.erasmuswithoutpaper.eu/ </small></p>
+					<p><small>Developers Hub - Specifications, Validators and Tools | https://developers.erasmuswithoutpaper.eu/</small></p>
+					<p><small>Github | https://github.com/erasmus-without-paper</small></p>
+					<p><small>LinkedIn group | https://www.linkedin.com/groups/13590744/</small></p>
+					<p><small>Twitter | https://twitter.com/hashtag/ErasmusWithoutPaper</small></p>
+				</div>
+			</section>
 
 
-				<section data-transition="slide" data-background="#b5533c">
-					<h1>THE END</h1>
-				</section>
-
-			</div>
-
+			<section data-transition="slide" data-background="#b5533c">
+				<h1>Thank you for your attention./ Have a nice afternoon</h1>
+			</section>
 		</div>
 
-		<script src="js/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="js/reveal.js"></script>
+
+	<script>
 
 			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
 
 		</script>
 
 	</body>
-</html>
+	</html>
