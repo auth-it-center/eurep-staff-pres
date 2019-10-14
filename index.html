@@ -44,7 +44,7 @@
 			<section data-transition="slide" data-background="#b5533c">
 				<h1>AUTH in the EWP Network</h1>
 				<p>
-					<small>Maria Tsiakmaki | Konstantinos Karaoglanoglou</small>
+					<small>Maria Tsiakmaki | Argyris Besinas | Konstantinos Karaoglanoglou</small>
 				</p>
 				<p>
 					<small>IT Center of AUTH</small>
@@ -58,13 +58,12 @@
 			<section data-transition="slide" data-background="#b5533c">
 				<section data-transition="slide" data-background="#b5533c">
 					<h2>Intro</h2>
-					<p align="left">Erasmus Without Paper is a project co-funded by the the European Commission.</p>
-					<p align="left">Erasmus without Paper is about:</p>
+					<p align="left">Erasmus Without Paper (EWP) is a project co-funded by the European Commission targeting:</p>
 					<ul>
-						<li>Replacing a paper-based workflow by a digital one</li>
+						<li>Automation of student mobility processes</li>
+						<li>Replacement of the paper-based workflow by a digital one</li>
 						<li>Tackling the administrative workload for students and staff</li>
-						<li>Creating free public infrastructure.</li>
-						<li>Streamlining technical solutions for student mobility.</li>
+						<li>Creation of a free public infrastructure for academic institutions</li>
 					</ul>
 				</section>
 
@@ -75,7 +74,7 @@
 				</section>
 				<section data-transition="slide" data-background="#b5533c">
 					<h2>Intro</h2>
-					<p>Consortium of 14 partner institutions composed of public institutions, higher education organisations, and companies from 8 European countries along with 12 associate partners</p>
+					<p>Consortium of 14 partner institutions composed of public institutions, higher education organisations, and companies from 8 European countries along with 12 associate partners.</p>
 					<p><a href="https://www.erasmuswithoutpaper.eu/partners" target="_blank">More Consortium info here</a></p>
 				</section>
 			</section>
@@ -84,7 +83,7 @@
 				<section data-transition="slide" data-background="#b5533c">
 					<h2>EWP Architecture</h2>
 					<p>
-						Consists of many independent modules(APIs).
+						Consists of various entities as APIs.
 						<ul>
 							<li>Institutions</li>
 							<li>Organizational Units</li>
@@ -96,12 +95,13 @@
 							<li>Transcripts of Records</li>
 						</ul>
 					</p>
+					<p><a href="https://github.com/erasmus-without-paper/" target="_blank">Available Schemas</a></p>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<h3>EWP Architecture</h3>	
+					<h3>EWP Architecture</h3>
 					<p>
-						Each institution can choose which of theese modules to implement depending on their needs.
+						Each institution determines which of these APIs are going to be implemented.
 					</p>
 				</section>
 
@@ -109,146 +109,92 @@
 
 			<section data-transition="slide" data-background="#b5533c">
 				<section data-transition="slide" data-background="#b5533c">
-					<h2>XML, XSD Schema files</h2>
-					<p align="left">Describe the APIs for</p>
-					<div align="left">
-						<ul>
-							<li>Institutions</li>
-							<li>Organizational Units</li>
-							<li>Courses</li>
-							<li>Simple Course Replication</li>
-							<li>Outgoing Mobilities</li>
-							<li>Incoming Mobilities</li>
-							<li>Learning Agreements</li>
-							<li>Transcripts of Records</li>
-						</ul>
-					</div>
-					<p align="left"><small>Available at: https://github.com/erasmus-without-paper/</small></p>
-				</section>
-				<section data-transition="slide" data-background="#b5533c">
-					<h3>EWP-related Git projects</h3>	
-					<img src="assets/screenshot-ewp-git.png">
-				</section>
-			</section>
-
-			<section data-transition="slide" data-background="#b5533c">
-				<section data-transition="slide" data-background="#b5533c">
 					<h2>EWP Registry Service</h2>
-					<p>Cata­logue which describes all the insti­tu­tions and modules implemented by them.<br>
-					Functions like a phonebook in the ewp network.</p>
+					<p>Cata­logue which describes all the insti­tu­tions and APIs implemented by them.<br>
+					The Registry functions like a phonebook in the EWP network.</p>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<h3>EWP Registry Service</h3>	
+					<h3>EWP Registry Service</h3>
 					<p>HEI/API Coverage Matrix</p>
-					<img src="assets/screeshot-coverage-matrix.png" style="width: 90%">
+					<img src="assets/screeshot-coverage-matrix.png" style="width: 80%">
+					<p><a href="https://registry.erasmuswithoutpaper.eu/coverage" target="_blank">HEI API Coverage Matrix</a>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<h3>Manifest File</h3>	
-					<p>Each institution publishes one in the EWP network.<br>Contains all the info regarding the institution.<br>Whenever the data in the manifest change, the registry is updated automatically.</p>
-				</section>
-
-
-
-			</section>
-
-			<section data-transition="slide" data-background="#b5533c">
-				<section data-transition="slide" data-background="#b5533c">
-					<h2>EWP Registry Service</h2>
-					<p>Cata­logue which describes all the insti­tu­tions and APIs exposed by them.</p>
+					<h3>Manifest File</h3>
+					<p>Each institution publishes its manifest file in the EWP network.</p>
+					<p>The manifest contains all relevant information of the participant institution.</p>
+					<p>When modifications/changes occur in the manifest file, they are automatically reflected in the registry.</p>
+					<a href="https://ewp.auth.gr/rest/manifest" target="_blank">AUTH's Manifest File</a>
 				</section>
 
 				<section data-transition="slide" data-background="#b5533c">
-					<h3>EWP Registry Service</h3>	
-					<img src="assets/screenshot-registry.png" style="width:578px;height:319px;">
-
-					<p><small>Dev Registry Service for development purposes.</small></p>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c">
-					<h3>HEI/API Coverage Matrix</h3>	
-					<img src="assets/screeshot-coverage-matrix.png">
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c">
-					<h3>Manifest Importer Status</h3>	
+					<h3>Manifest Importer Status</h3>
 					<img src="assets/screenshot-manifest-importer-status.png">
-					<p><small>Registry is updated automatically</small></p>
+					<p><a href="https://registry.erasmuswithoutpaper.eu/status" target="_blank">Manifest Status</a></p>
 				</section>
-
-
 
 			</section>
 
 			<section data-transition="slide" data-background="#b5533c">
 				<section data-transition="slide" data-background="#b5533c">
 					<h2>How Did AUTH Join the EWP Network</h2>
-					<p>
-						Schema Understanding and Documentation Understanding
-					</p>
-					<p>
-						Collaboration of different University Units (EUREP, IT Center of AUTh, QA)
-					</p>
-					<p> Testing</p>
-				</section>
-				<section data-transition="slide" data-background="#b5533c">
-					<h2>How Did AUTh Join the EWP Network</h2>
-					<p>
-						Joining the EWP network begins with publishing your manifest file to the registry service.<br>Done through human interaction.<br><br>All the subsequent changes during the implementation are updated automatically as they happen. 
-					</p>
-				</section>
-				<section data-transition="slide" data-background="#b5533c">
-					<h2>How Did AUTh Join the EWP Network</h2>
-					<p>
-						The next step is deciding what modules to implement and their feasibility.
-					</p>
+					<ol>
+					<li class="fragment">
+					 Documentation (architecture, schemas, APIs, authentication/authorization, certificate signing)
+				 </li>
+					<li class="fragment">
+						Collaboration of EUREP, IT Center of AUTh and QA units
+					</li>
+					<li class="fragment">Implementation based on the <a href="https://github.com/erasmus-without-paper/ewp-reference-connector" target="_blank">EWP Reference Connector</a></li>
+					<li class="fragment">Publish manifest file</li>
+					<li class="fragment">Testing from both sides</li>
+				</ol>
 				</section>
 			</section>
 
 			<section>
 				<section data-transition="slide" data-background="#b5533c">
-					<h2>Technical Difficulties</h2>
+					<h2>Technical (and Other) Difficulties</h2>
 					<div align="left">
 						<ul>
-							<li>Some required data may not be collected in the SIS or be distributed over different in the institution.</li>
-							<li>Data may be stored in different formats than those required or not even be digitised in the first place.</li>
-							<li>It is not easy for an instution to connect to the EWP network without a dedicated development team.</li>
-							<li>Currently used tools may not be compatible with EWP (i.e. IIAs via Google forms)</li>
+							<li>Difficulty in identifying who are the data-holders</li>
+							<li>Data may not be available in the university's SIS</li>
+							<li>Data could be dispersed over different application tools</li>
+							<li>Need for a dedicated IT development team</li>
+
 						</ul>
 					</div>
 				</section>
 			</section>
 
 			<section data-transition="slide" data-background="#b5533c">
-				<h2>Issues/Difficulties</h2>
-				<p>Who are the data-holders? Identifying all the relevant stakeholders.</p>
-				<p>Technical Issues?</p>
-			</section>
-
-			<section data-transition="slide" data-background="#b5533c">
 				<h2>What's Next for AUTH in the EWP Network</h2>
-				<p>Implementing more modules</p>
-				<p>Intergrating EWP in the existing mobility workflows.</p>
+				<ul>
+				<li>Implementing more APIs - Contributing more data</li>
+				<li>Fully integrate EWP in the existing mobility workflows used by EUREP</li>
+				<li>Making the most of the data-exchange capabilities provided by the EWP</li>
 			</section>
 
 			<section data-transition="slide" data-background="#b5533c">
 				<h2>Links</h2>
 				<div align="left">
-					<p><small>Erasmus Without Paper - Competence Centre | https://cc.erasmuswithoutpaper.eu/</small></p>
-					<p><small>Architecture and Common Datatypes | https://github.com/erasmus-without-paper/ewp-specs-architecture</small></p>
-					<p><small>EWP Registry Service | https://registry.erasmuswithoutpaper.eu/</small></p>
-					<p><small>DEV Registry Service | https://dev-registry.erasmuswithoutpaper.eu/ </small></p>
-					<p><small>Developers Hub - Specifications, Validators and Tools | https://developers.erasmuswithoutpaper.eu/</small></p>
-					<p><small>Github | https://github.com/erasmus-without-paper</small></p>
-					<p><small>LinkedIn group | https://www.linkedin.com/groups/13590744/</small></p>
-					<p><small>Twitter | https://twitter.com/hashtag/ErasmusWithoutPaper</small></p>
+					<p><small>Erasmus Without Paper - Competence Centre | <a href="https://cc.erasmuswithoutpaper.eu" target="_blank">https://cc.erasmuswithoutpaper.eu/</a></small></p>
+					<p><small>Architecture and Common Datatypes | <a href="https://github.com/erasmus-without-paper/ewp-specs-architecture" target="_blank">https://github.com/erasmus-without-paper/ewp-specs-architecture</a></small></p>
+					<p><small>EWP Registry Service | <a href="https://registry.erasmuswithoutpaper.eu/" target="_blank">https://registry.erasmuswithoutpaper.eu/</a></small></p>
+					<p><small>DEV Registry Service | <a href="https://dev-registry.erasmuswithoutpaper.eu/" target="_blank">https://dev-registry.erasmuswithoutpaper.eu/</a></small></p>
+					<p><small>Developers Hub - Specifications, Validators and Tools | <a href="https://developers.erasmuswithoutpaper.eu/" target="_blank">https://developers.erasmuswithoutpaper.eu/</a></small></p>
+					<p><small>Github | <a href="https://github.com/erasmus-without-paper" target="_blank">https://github.com/erasmus-without-paper</a></small></p>
+					<p><small>LinkedIn group | <a href="https://www.linkedin.com/groups/13590744/" target="_blank">https://www.linkedin.com/groups/13590744/</a></small></p>
+					<p><small>Twitter | <a href="https://twitter.com/hashtag/ErasmusWithoutPaper" target="_blank">https://twitter.com/hashtag/ErasmusWithoutPaper</a></small></p>
 				</div>
 			</section>
 
 
 			<section data-transition="slide" data-background="#b5533c">
-				<h1>Thank you for your attention./ Have a nice afternoon</h1>
+				<h1>Thank you for your attention</h1>
+				<p>Contact: <a href="mailto:kkaraogl@it.auth.gr">kkaraogl@it.auth.gr</a></p>
 			</section>
 		</div>
 
